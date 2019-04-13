@@ -10,11 +10,12 @@
          <h1 style="text-align:center; background-image:url('papel.jpeg') ">Calculadora  Java Script</h1>
 <div id="calculadora"> 
   <div  class="top"><input   type="text" id="pantalla"  class="pantalla"  >
+  <input  name="button" type="button" class="off"  value="off" onclick="off()">
 <div class="botones">
                           <input type="button" value="√" onclick="calculadora.calcularRaiz()" class="operator">
                           <input   type="button" value="C" onclick="calculadora.limpiarPantalla()" class="limpiar">
            <input type="button" value="!" onclick="calculadora.calcularFactorial()" class="operator">
-                          <input   type="button"  value="off" onclick="off()">
+                          <input   type="button"  value="on" onclick="on()">
                        </div>
                      <div class="botones">
                           <input type="button" value="7" onclick="calculadora.pintarValor(value)">
