@@ -2,7 +2,9 @@
 function off () {
 document.getElementById('pantalla').disabled= 'disabled';
 }
-
+function on (){
+    document.getElementById('pantalla').value=0;
+}
 
 class Calculadora{
     constructor(){

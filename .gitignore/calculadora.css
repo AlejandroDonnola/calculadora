@@ -1,35 +1,42 @@
-html{
-	padding:20px;
-	border-radius:25px;
+*{
+	padding:0 auto;
+	border-radius:50px;
 	margin:0 auto;
 }
 
  input[type="button"]{
 width:80px;
 height:80px;
-font-size:40px;
+font-size:30px;
+}
+input[name="button"]{
+	align-items:right;
+}
+div >input{
+	background:#CCCCCC;
+	text-transform: uppercase;
 }
  input [type="text"]{
 	background-color:#fff;
-	text-align:right;
+	text-align:left;
 	}
 #calculadora{
-width: 375px;
+width: 350px;
   height: auto;
   margin: 2% auto;
   padding: 2% 2% 1%;
   background:#FF0000;
   background: linear-gradient(#FF0000);
-  border-radius: 25px;
+  border-radius: 50px;
   }
 #pantalla {
 	display:list-item;
 	text-align:center;
-	font-size:40px;
+	font-size:100px;
 	margin-bottom:50px;
-	width:350px;
-	height:100px;
-	line-height:100px;
+	width:360px;
+	height:120px;
+	line-height:120px;
 	background-color:#fff;
 	border-radius:25px;
 	text-align:right;
@@ -38,4 +45,4 @@ width: 375px;
 
 #pantalla:disabled {
 	color:white;
-}
+} 
