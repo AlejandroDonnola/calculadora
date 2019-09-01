@@ -1,9 +1,11 @@
- alert ("en esto lo habia dejado despues pasame tu comentario y que harias");
+alert ("en esto lo habia dejado despues pasame tu comentario y que harias");
+var count=0;
 function off () {
 document.getElementById('pantalla').disabled= 'disabled';
 }
 function on (){
     document.getElementById('pantalla').disabled =document.getElementById('pantalla').value=0;
+    count=1;
 }
 
 class Calculadora{
@@ -18,9 +20,17 @@ class Calculadora{
         document.getElementById('pantalla').value = "ERROR";
         }
     }
-         pintarValor(numero){
+         
+    pintarValor(numero)
+     {
         var anterior = document.getElementById('pantalla').value;
+        if(count==1)
+        {
+            anterior=anterior.substring(1);
+            count=0;
+        }
         document.getElementById('pantalla').value = anterior.concat(numero);
+       
     }
     limpiarPantalla(){
          document.getElementById('pantalla').value=null;
